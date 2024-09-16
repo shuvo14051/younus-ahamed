@@ -2,14 +2,11 @@ import React, { useState } from "react";
 
 const Publications = () => {
   return (
-    <section
-      id="publications"
-      style={{ paddingTop: "90px", textAlign: "justify" }}
-    >
-      <h1 style={{ textAlign: "center", marginBottom: "20px" }}>Research</h1>
+    <section id="publications">
+      <h1 className="title mb-5 mt-3 pt-5">Research</h1>
       <div className="container">
         <div className="row">
-          <div className="col-12 col-sm-12 col-md-4 col-lg-4">
+          <div className="col-12 col-sm-12 col-md-12 col-lg-12">
             <Paper
               title="1434: Machine Learning-Driven Temporal Subphenotypes of Early Sepsis"
               authors="Ahamed, Y., Smith, G., Kumar, G., Nadkarni, G., Adjeroh, D., & Sakhuja, A."
@@ -31,7 +28,7 @@ publisher={LWW}
 }`}
             />
           </div>
-          <div className="col-12 col-sm-12 col-md-4 col-lg-4">
+          <div className="col-12 col-sm-12 col-md-12 col-lg-12">
             <Paper
               title="A Deep Learning Approach for Satellite and Debris Detection: YOLO in Action"
               authors="Ahamed, M. Y., Syed, M. A. B., Chatterjee, P., Bin Habib, A. Z. S."
@@ -49,7 +46,7 @@ organization={IEEE}
 }`}
             />
           </div>
-          <div className="col-12 col-sm-12 col-md-4 col-lg-4">
+          <div className="col-12 col-sm-12 col-md-12 col-lg-12">
             <Paper
               title="Pediatric Bone Age Prediction Using Deep Learning"
               authors="Bin Habib, A. Z. S., Islam, M. E., Syed, M. A. B., Ahamed, M. Y., & Tasnim, T."
@@ -108,7 +105,7 @@ const Paper = ({
           ? `${journal}, ${volume}(${issue}), ${pages}.`
           : `In Proceedings of the ${conference} (pp. ${pages}). IEEE.`}
       </p>
-      <div className="small-btns mb-3 mt-0">
+      <div className="mb-3 mt-0">
         <button
           className="bb"
           type="button"
@@ -121,6 +118,7 @@ const Paper = ({
           target="_blank"
           rel="noopener noreferrer"
           href={doiLink}
+          type="button"
         >
           doi
         </a>

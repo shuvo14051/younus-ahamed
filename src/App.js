@@ -7,18 +7,28 @@ import Publications from "./components/Publications";
 import Projects from "./components/Projects";
 import ContactMe from "./components/ContactMe";
 
-// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
 function App() {
   return (
     <div>
       <Navbar />
-      <Home />
-      <About />
-      <Projects />
-      <Publications />
-      <Skills />
-      <ContactMe />
+      <section id="home" className="home-section">
+        <Home />
+      </section>
+      <section id="about" className="about-section">
+        <About />
+      </section>
+      <section id="projects" className="projects-section">
+        <Projects />
+      </section>
+      <section id="publications" className="publications-section">
+        <Publications />
+      </section>
+      <section id="skills" className="skills-section">
+        <Skills />
+      </section>
+      <section id="contact" className="contact-section">
+        <ContactMe />
+      </section>
     </div>
   );
 }

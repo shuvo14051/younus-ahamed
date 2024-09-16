@@ -1,44 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-/* ============================= Dark mode css ======================== */
-body {
-  transition: background-color 0.3s, color 0.3s;
-}
-
-body.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
-}
-
-p.dark-mode {
-  color: #ffffff;
-}
-
-.dark-mode .nav-link,
-.dark-mode .navbar-brand,
-.dark-mode .button-dark,
-.dark-mode .button-dark svg {
-  color: #ffffff;
-}
-
-.button-dark {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  font-size: 1.2rem;
-  transition: color 0.3s;
-}
-
-.button-dark svg {
-  transition: color 0.3s;
-}
-
-/* ============================================================= */
 
 * {
   margin: 0;
   padding: 0;
 }
+
+/* ================================= BG COLOR of section ========================== */
+.home-section {
+  background-color: white; /* Light blue for home */
+  padding: 20px;
+}
+
+.about-section {
+  background-color: #f0ebea;
+  padding: 20px; /* Light pink for about */
+}
+
+.projects-section {
+  background-color: white;
+  padding: 40px; /* Beige for projects */
+}
+.publications-section {
+  background-color: #f0ebea;
+  padding: 0px; /* Light grey for publications */
+}
+
+.skills-section {
+  background-color: white;
+  padding: 50px; /* Pale green for skills */
+}
+
+.contact-section {
+  background-color: #f0ebea;
+  padding: 40px; /* Light orange for contact */
+}
+
+/* ================================= END ========================== */
 
 html {
   scroll-behavior: smooth;
@@ -251,11 +248,6 @@ body {
   padding: 10px 10px 0 10px;
 }
 
-.edu:hover {
-  padding: 10px 10px 0 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-}
-
 .text-justify {
   text-align: justify;
 }
@@ -286,7 +278,7 @@ body {
   margin-right: 5px;
   border: 1px solid rgb(56, 167, 195);
   background-color: #fff;
-  padding: 4px 12px;
+  padding: 0px 10px;
   border-radius: 4px;
   font-size: 12px;
   margin-left: 0;
@@ -296,6 +288,42 @@ body {
 .bb:hover {
   background-color: rgb(56, 167, 195);
   color: white;
+}
+
+.bb-2 {
+  margin-right: 5px;
+  border: 1px solid rgb(216, 64, 40);
+  background-color: #fff;
+  padding: 2px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-left: 0;
+  color: rgb(216, 64, 40);
+  text-decoration: none;
+}
+.bb-2:hover {
+  background-color: rgb(216, 64, 40);
+  color: white;
+}
+
+.bb-3 {
+  margin-right: 5px;
+  border: 1px solid rgb(51, 201, 126);
+  background-color: #fff;
+  padding: 2px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-left: 0;
+  color: rgb(51, 201, 126);
+  text-decoration: none;
+}
+.bb-3:hover {
+  background-color: rgb(51, 201, 126);
+  color: white;
+}
+
+.live {
+  margin-left: 20px;
 }
 
 /* ======================= Project CSS ========================= */
@@ -308,3 +336,67 @@ body {
   height: 200px; /* Fixed height */
   object-fit: cover; /* Maintain aspect ratio and cover the area */
 }
+
+@media only screen and (max-width: 600px) {
+  .fixed-size-image {
+    height: 100px; /* Reduce height on smaller screens */
+  }
+}
+
+/* ====================== contact ======================== */
+.email {
+  text-decoration: none;
+}
+
+.center-elements {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.fa-envelope {
+  color: #c01212;
+}
+
+.fa-map-marker-alt {
+  color: rgb(25, 144, 71);
+}
+
+/* ============================= Dark mode css ======================== */
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+p.dark-mode {
+  color: #ffffff;
+}
+
+.dark-mode .nav-link,
+.dark-mode .navbar-brand,
+.dark-mode .button-dark,
+.dark-mode .button-dark svg {
+  color: #ffffff;
+}
+
+.button-dark {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.button-dark svg {
+  transition: color 0.3s;
+}
+
+/* ============================================================= */

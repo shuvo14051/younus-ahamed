@@ -3,12 +3,12 @@ import { TypeAnimation } from "react-type-animation";
 
 function Home() {
   const openResume = () => {
-    window.open("/assets/Md__Younus_Ahamed.pdf");
+    window.open(`${process.env.PUBLIC_URL}/assets/Md__Younus_Ahamed.pdf`);
   };
 
   return (
     <>
-      <section id="profile">
+      <section id="profile" className="mt-5">
         <div className="container">
           <div className="row">
             <div className="d-flex justify-content-center align-items-center col-md-6  col-lg-6 col-6 col-sm-6">
@@ -57,7 +57,11 @@ function Home() {
                   </button>
                   <button
                     className="butn butn-color-1"
-                    onclick="location.href='#contact'"
+                    onClick={() =>
+                      document
+                        .getElementById("contact")
+                        .scrollIntoView({ behavior: "smooth" })
+                    }
                   >
                     Contact
                   </button>

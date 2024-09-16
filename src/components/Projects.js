@@ -4,10 +4,10 @@ import projectData from "../data/projectData";
 function Projects() {
   return (
     <div className="container mt-4">
-      <h1 className="project-header">Projects</h1>
+      <h1 className="title pt-3 mb-5">Projects</h1>
       <div className="row">
         {projectData.map((project, index) => (
-          <div className="col-6 col-sm-6 col-lg-3 col-md-3" key={index}>
+          <div className="col-6 col-sm-6 col-lg-4 col-md-4" key={index}>
             <div className="card">
               <img
                 src={project.image}
@@ -23,7 +23,7 @@ function Projects() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="bb" type="button">
+                    <button className="bb-2" type="button">
                       GitHub
                     </button>
                   </a>
@@ -32,7 +32,7 @@ function Projects() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="bb" type="button">
+                    <button className="bb-3 live" type="button">
                       Live
                     </button>
                   </a>
